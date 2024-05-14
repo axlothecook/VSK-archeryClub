@@ -1,0 +1,319 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex; 
+    flex-flow: column wrap;
+    background-color: #252432;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container-1{
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url(images/test5.jpg);
+    height: 59em;
+}
+
+
+/* header code */
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 100px 0;
+}
+
+.logo-img{
+    width: 90px;
+    height: 105px;
+    padding: 10px 0;
+}
+
+.book-now-btn, .explore-more-btn{
+    display: flex;
+    padding: 13px 32px;
+    background-color: #eee;
+    border: none;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border: solid 3px black;
+}
+
+
+/* middle links code */
+.links-container{
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.links-container a{
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.links-container a:hover{color: #2352A7}
+.links-container a:active{color: #102E66}
+
+
+/* main text code */
+
+.text-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 42rem;
+}
+
+.main-text-container{
+    width: 60rem;
+    height: 15rem;
+    margin: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+
+
+/* hover over navbar items */
+
+.menu-svg:hover{
+    cursor: pointer;
+    fill: #eeeeee8e;
+    transition: 0.2 ease-in;
+}
+
+.book-now-btn:hover, .explore-more-btn:hover{
+    cursor: pointer;
+    background-color: #eeeeeeb6;
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border: double 3px transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(white, white), 
+                    linear-gradient(to right, #FFBA3A, #83AAF2);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+} 
+
+.book-now-btn:active, .explore-more-btn:active{
+    cursor: pointer;
+    background-color: #969494;
+    border-color: #969494;
+    transition: 0.2 ease-in;
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+} 
+
+
+/* posts container */
+
+.container-2{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    /* border: 3px solid red; */
+    width: 98vw;
+    height: auto;
+    margin: 20px auto;
+}
+
+article{
+    position: relative;
+    /* border: 3px solid blue; */
+    width: 97vw;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.post-img{
+    height: 800px;
+    width: 1823px;
+    object-fit: cover;
+}
+
+
+
+.post-link{
+    position: absolute;
+    width: 1400px;
+    bottom: 5%;
+    left: 3%;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+h5{
+    position: absolute;
+    bottom: 17%;
+}
+
+h6{
+    position: absolute;
+    bottom: -3%;
+}
+
+.post-link:active{
+    cursor: pointer;
+    color: #ccc;
+    transition: 0.2 ease-in;
+}
+
+
+
+/* contact info container */
+.container-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.form-link{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.form-btn{
+    display: flex;
+    padding: 0 30px;
+    background-color: #0066ff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-btn:hover{
+    cursor: pointer;
+    background-color: #0066ffce;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.form-btn:active{
+    cursor: pointer;
+    background-color: #104491d3;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+/* footer code */
+
+.footer{
+    margin-top: 40px;
+    background-color: #252432;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.container-4{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5rem 6rem 3rem;
+}
+
+.col{
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 90px;
+    line-height: 0px;
+}
+
+.svg-container{display: flex; gap: 30px; margin: 10px 0; }
+
+
+hr{
+    background-color: white;
+    display: block;
+    width: 70%;
+    height: 1px;
+}
+
+/* editing spacing, text color and text size*/
+h3, p{color: #5f5f63}
+h4, h3{line-height: 17px;}
+h4{font-size: 18px;}
+h3{font-size: 22px;}
+
+/* column1 spacing between location text */
+#vsk-office{margin: 45px 0 12px; line-height: 0;}
+.col-1 > p{margin: 11px 0; line-height: 0;}
+
+
+/* column2 spacing between text, and text n line */
+.col-2 > p{margin-bottom: 45px;}
+.col-2 > h4{margin: 45px 0 15px 0; line-height: 0;}
+
+/* editing link style */
+.footer > div a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer > div a:hover{cursor: pointer;}
+.footer > div a:active{cursor: pointer; color: rgb(173, 173, 173);}
+
+
+/* sponsor container*/
+.container-5{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.sponsor-images{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 100px;
+}
+.sponsor{
+    width: 300px;
+    height: 150px;
+}
+
+.sponsor2{height: 100px; background-color: white;}
+
+.design-claim{margin: 0 auto; color: #5f5f63}
+
+
+
+/* svg sizing */
+svg{
+    height: 40px;
+    fill: white;
+}
+
+#phone-svg{
+    height: 25px;
+}
+
+.phone-nmbr{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
