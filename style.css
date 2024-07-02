@@ -55,15 +55,18 @@ body{
     gap: 30px;
 }
 
-.links-container a{
+
+/* code about links */
+
+a{
     text-decoration: none;
-    color: white;
     font-size: 23px;
     font-weight: bold;
+    color: white;
 }
 
 .links-container a:hover{color: #2352A7}
-.links-container a:active{color: #102E66}
+a:active{color: #102E66}
 
 
 /* main text code */
@@ -186,20 +189,17 @@ h6{
     margin-top: 50px;
 }
 
-.form-link{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
+
 
 .form-btn{
     display: flex;
-    padding: 0 30px;
+    color: white;
+    padding: 0px 30px;
     background-color: #0066ff;
     border: none;
     border-radius: 20px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -316,4 +316,125 @@ svg{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+
+/* Form page code below */
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper .header{
+    grid-column: 1 / 2;
+    background-color: white;
+}
+
+.wrapper > .header > .links-container a{
+    color: black;
+}
+
+.wrapper > .header > .links-container .contact{
+    color: gold;
+}
+
+.child-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-areas: 
+    "image image from image image";
+}
+
+.background-div{
+    grid-area: image;
+    grid-column: 1 / 6;                            
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.form{
+    grid-area: form;
+    grid-column: 3 / 4;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    color: black;
+    margin: 5rem 0 5rem;
+}
+
+.form h1{
+    align-self: center;
+    font-size: 40px;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+textarea, select{
+    background-color: white;
+    width: 32rem;
+}
+
+textarea{
+    font-size: 20px;
+    resize: none;
+}
+
+select{
+    padding: 13px 20px;
+    font-size: 17px;
+}
+
+input{
+    background-color: white;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 30rem;
+}
+
+.privacy-policy-fieldset{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3rem 0;
+}
+
+input[id="privacy-policy"]{
+    width: 1rem;
+}
+
+#privacy-policy > a{
+    color: blue;
+    font-size: 17px;
+    font-weight: none;
+    text-decoration: underline;
+}
+
+.submit-btn{
+    width: 25%;
+    margin: 0 auto;
+}
+
+button[type='submit']{
+    padding: 15px;
+    font-size: 17px;
+    border-radius: 10px;
+    color: white;
+    background-color: #102E66;
+}
+
+button[type='submit']:hover{
+    background-color: #2352A7;
 }
