@@ -483,19 +483,21 @@ button[type='submit']:hover{
 
 .archer-card{
     height: auto;
-    /* height: 800px; */
+    /* height: 600px; */
     background-color: white;
-    border: 1px solid red;
-    background-image: url(images/compundbow.webp);
+    border: 3px solid red;
+    /* background-image: url(images/compundbow.webp);
     background-position: 170%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     /* transform: rotate(90deg); */
 
     border-radius: 20px;
 
+    /* display: grid;
+    grid-template-columns: 1fr; */
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: flex-end;
 }
 
@@ -505,7 +507,13 @@ button[type='submit']:hover{
     box-shadow: 10px 20px 12px 10px;
 } */
 
+/* .archer-card > .upper-segment{
+    justify-self: flex-start;
+} */
+
 .upper-segment{
+
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -526,19 +534,20 @@ h2, h3, p{
     margin-inline-end: 0px;
 }
 
-.archer-card > hr{
+/* .archer-card > hr{
     width: 100%;
     align-self: center; 
-    border: 2px solid #2352A7;        /* put this to be only here cuz in main page footer the color changed too*/
+    border: 2px solid #2352A7;       
     background-color: #2352A7;
     padding: 0;
     margin: 0;
-}
+} */
 
 .lower-segment{
-    height: auto;
-    background-color: white;
     padding: 15px;
+    background-color: greenyellow;
+    border-top: 3px solid #2352A7;
+    border-radius: 0 0 20px 20px;
 
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -576,19 +585,28 @@ h2, h3, p{
     fill: #2352A7;
 }
 
+/* code for images of archers */
 
 .member-image{
-    width: 25rem;
     height: auto;
     align-self: center;
+    justify-self: center;
+}
+
+.archer-am, .archer-ls, .archer-amjr{
+    width: 27rem;
 }
 
 .archer-ar{
-    width: 19rem;
+    width: 20rem;
+} 
+
+.archer-npp{
+    width: 27rem;
 }
 
 .archer-dl, .coach-tm{
-    width: 21rem;
+    width: 22rem;
 }
 
 .archer-mk{
