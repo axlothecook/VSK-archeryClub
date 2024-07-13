@@ -1,4 +1,6 @@
 body{
+    --current-page-clr: #efb52f;
+    --header-clr: #102E66;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -217,11 +219,11 @@ h6{
 
 
 
-/* footer code */
+/* footer code */         /* fix it */
 
 .footer{
     margin-top: 40px;
-    background-color: #252432;
+    background-color: var(--header-clr);
     height: auto;
     width: 100%;
     display: flex;
@@ -319,6 +321,8 @@ svg{
 }
 
 
+
+
 /* Form page code below */
 .wrapper{
     display: grid;
@@ -331,15 +335,15 @@ svg{
 
 .wrapper .header{
     grid-column: 1 / 2;
-    background-color: white;
+    background-color: #102E66;
 }
 
-.wrapper > .header > .links-container a{
+/* .wrapper > .header > .links-container a{
     color: black;
-}
+} */
 
 .wrapper > .header > .links-container .contact{
-    color: gold;
+    color: var(--current-page-clr);
 }
 
 .child-wrapper{
@@ -437,4 +441,160 @@ button[type='submit']{
 
 button[type='submit']:hover{
     background-color: #2352A7;
+}
+
+
+
+
+/* Team page code below */
+.wrapper-roster > .header{
+    background-color: var(--header-clr);
+}
+
+.wrapper-roster > .header > .links-container > a{
+    color: white;
+}
+
+.wrapper-roster > .header > .links-container a[href="team.html"]{
+    color: var(--current-page-clr);
+}
+
+.parent-roster-container{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+    padding: 70px 100px 70px 100px;
+    border: 3px solid yellow;
+    gap: 15px;
+    background-color: white;
+}
+
+.parent-roster-container > h1{
+    color: #2352A7;
+    font-size: 41px;
+}
+
+.child-roster-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    border: 3px solid green;
+}
+
+
+.archer-card{
+    height: auto;
+    /* height: 800px; */
+    background-color: white;
+    border: 1px solid red;
+    background-image: url(images/compundbow.webp);
+    background-position: 170%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: rotate(90deg); */
+
+    border-radius: 20px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+/* edit what happens when user hover over a card */
+
+/* .archer-card:hover{                
+    box-shadow: 10px 20px 12px 10px;
+} */
+
+.upper-segment{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    padding: 40px;
+    gap: 13px;
+}
+
+.upper-segment > h3, .upper-segment > h3 > p{
+    color: #102E66;
+}
+
+h2, h3, p{
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.archer-card > hr{
+    width: 100%;
+    align-self: center; 
+    border: 2px solid #2352A7;        /* put this to be only here cuz in main page footer the color changed too*/
+    background-color: #2352A7;
+    padding: 0;
+    margin: 0;
+}
+
+.lower-segment{
+    height: auto;
+    background-color: white;
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-items: center;
+}
+
+.first-div{
+    padding-top: 4px;
+    color: black;
+}
+
+.first-div > h2{
+    font-size: 17px;
+}
+
+
+.second-div{
+    color: black;
+    text-align: left;
+}
+
+.first-div > h2, .second-div > h2 + h2{
+    font-weight: normal;
+}
+
+.second-div > h2 + h2 + h2{
+    color: #2352A7;
+    font-weight: bold;
+}
+
+
+.upper-segment > svg{
+    width: 40px;
+    height: 40px;
+    fill: #2352A7;
+}
+
+
+.member-image{
+    width: 25rem;
+    height: auto;
+    align-self: center;
+}
+
+.archer-ar{
+    width: 19rem;
+}
+
+.archer-dl, .coach-tm{
+    width: 21rem;
+}
+
+.archer-mk{
+    width: 23rem;
+}
+
+.coach-cz{
+    width: 20rem;
 }
