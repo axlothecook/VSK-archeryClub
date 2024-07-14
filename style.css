@@ -219,10 +219,9 @@ h6{
 
 
 
-/* footer code */         /* fix it */
+/* footer code */      
 
 .footer{
-    margin-top: 40px;
     background-color: var(--header-clr);
     height: auto;
     width: 100%;
@@ -255,7 +254,7 @@ hr{
 
 /* editing spacing, text color and text size*/
 h3, p{color: #5f5f63}
-h4, h3{line-height: 17px;}
+h4, h3{line-height: 23px;}
 h4{font-size: 18px;}
 h3{font-size: 22px;}
 
@@ -266,7 +265,7 @@ h3{font-size: 22px;}
 
 /* column2 spacing between text, and text n line */
 .col-2 > p{margin-bottom: 45px;}
-.col-2 > h4{margin: 45px 0 15px 0; line-height: 0;}
+.col-2 > h4{margin: 25px 0 35px 0; line-height: 0;}
 
 /* editing link style */
 .footer > div a{
@@ -447,15 +446,16 @@ button[type='submit']:hover{
 
 
 /* Team page code below */
+.wrapper-roster{
+    display: flex;
+    flex-flow: column wrap;
+}
+
 .wrapper-roster > .header{
     background-color: var(--header-clr);
 }
 
-.wrapper-roster > .header > .links-container > a{
-    color: white;
-}
-
-.wrapper-roster > .header > .links-container a[href="team.html"]{
+.wrapper-roster > .header > .links-container > a[href="team.html"]{
     color: var(--current-page-clr);
 }
 
@@ -619,3 +619,101 @@ h2, h3, p{
 
 
 /* personel-login code below */
+
+.personel-login-container > .header > .links-container > a[href="personel-login.html"]{
+    color: var(--current-page-clr);
+}
+
+.personel-login-container > .header{
+    background-color: var(--header-clr);
+}
+
+.personel-login-container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.main-content{
+    height: 56rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    background-color: #eee;
+}
+
+.the-colored-side{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form{
+    justify-self: center;
+    align-self: center;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 13px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 28px;
+}
+
+.h1-box{
+    align-self: center;
+}
+
+.h1-box > h1{
+    font-size: 45px;
+    color: black;
+}
+
+.log-in-info-box{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.log-in-info-box > fieldset > input{
+    width: 26rem;
+    border: 3px solid #e2e8f0;
+}
+
+.log-in-info-box > fieldset > input:hover{
+    border-color: #2c69db;
+}
+
+.log-in-info-box > fieldset > input:focus {  /* border is also black */
+    /* border-color: #2c69db; */
+    border: 3px solid red;
+}
+
+.log-in-info-box button:first-of-type{
+    width: 29rem;
+}
+
+.help-login-box{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+}
+
+.help-login-box > h3, .help-login-box a:first-of-type{
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.help-login-box > h3{
+    color: black;
+}
+
+.help-login-box a:first-of-type{
+    color: #2352A7;
+}
+
+.help-login-box a:first-of-type:hover{
+    color: #2c69db;
+}
