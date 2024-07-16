@@ -297,7 +297,7 @@ h3{font-size: 22px;}
     height: 150px;
 }
 
-.sponsor2{height: 100px; background-color: white;}
+.sponsor2{height: 100px;}
 
 .design-claim{margin: 0 auto; color: #5f5f63}
 
@@ -326,7 +326,7 @@ svg{
 .wrapper{
     display: grid;
     grid-template-columns: 1fr;
-    background-image: url(images/background.jpg);
+    background-image: url(images/contact-form-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -336,10 +336,6 @@ svg{
     grid-column: 1 / 2;
     background-color: #102E66;
 }
-
-/* .wrapper > .header > .links-container a{
-    color: black;
-} */
 
 .wrapper > .header > .links-container .contact{
     color: var(--current-page-clr);
@@ -716,4 +712,100 @@ h2, h3, p{
 
 .help-login-box a:first-of-type:hover{
     color: #2c69db;
+}
+
+
+
+/* sponsors code below */
+
+.sponsors-container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sponsors-container > .header > .links-container > a[href="sponsors.html"]{
+    color: var(--current-page-clr);
+}
+
+.sponsors-container > .header{
+    background-color: var(--header-clr);
+}
+
+.main-content-sponsors{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-title-sponsors{
+    display: grid;
+    height: 800px;
+    background-image: url(images/sponsors-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.older-child{
+    background-image: linear-gradient(to top, #252432, rgba(255,0,0,0));
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.older-child > div{
+    grid-column: 2 / 3;
+    align-self: flex-end;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 7px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.older-child > div > h1{
+    font-size: 3rem;
+    color: #FFBA3A;
+}
+
+h1{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.older-child > div > p{
+    color: #e2e8f0;
+}
+
+.older-child > div > a{
+    padding-top: 20px;
+}
+
+.join-us-btn{
+    padding: 12px 34px;
+    background-color: #cd122d;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 7px;
+}
+
+.join-us-btn:hover{
+    background-color: #ee1737;
+    cursor: pointer;
+}
+
+
+/* list and description of partners */
+.partner-container{
+    border: 1px solid red;
+    height: 600px;
+    display: grid;
+
+}
+
+.partner{
+
 }
