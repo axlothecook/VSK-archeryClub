@@ -57,6 +57,10 @@ body{
     gap: 30px;
 }
 
+.links-container > .svg-container{
+    margin-left: 3rem;
+}
+
 
 /* code about links */
 
@@ -242,7 +246,14 @@ h6{
     line-height: 0px;
 }
 
-.svg-container{display: flex; gap: 30px; margin: 10px 0; }
+.svg-container{
+    display: flex; gap: 30px; margin: 10px 0; 
+}
+
+.svg-container > svg{
+    cursor: pointer;
+}
+
 
 
 hr{
