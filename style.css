@@ -994,3 +994,43 @@ tr:nth-child(even) {
 .word-break{
     white-space: pre;
 }
+
+
+
+/* code for news page */
+.wrapper-container> .header > .links-container > a[href="news.html"]{
+    color: var(--current-page-clr);
+}
+
+.wrapper-container > .header{
+    background-color: var(--header-clr);
+}
+
+.main-content-box{
+    height: auto;
+    border: 1px solid yellow;
+}
+
+.middle-content-box{
+    border: 1px solid red;
+}
+
+.front-news{
+    border: 1px solid blue;
+}
+
+img[src="images/test2.jpg"]{
+    width: 30rem;
+}
+
+.following-news{
+    /* height: 400px; */
+    border: 1px solid greenyellow;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.news-box{
+    display: flex;
+    flex-direction: column;
+}
