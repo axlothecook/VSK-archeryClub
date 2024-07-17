@@ -799,9 +799,6 @@ h1{
 
 
 /* list and description of partners */
-
-
-
 .middle-partner-container{
     display: flex;
     flex-direction: column;
@@ -879,4 +876,121 @@ img[src="images/sponsor2.png"]{
 .honorary-mention-container > p{
   color: black;
   font-size: 20px;
+}
+
+
+
+/* about us page code */
+.global-wrapper> .header > .links-container > a[href="about.html"]{
+    color: var(--current-page-clr);
+}
+
+.global-wrapper > .header{
+    background-color: var(--header-clr);
+}
+
+.main-box{
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    padding: 50px 0 50px 0;
+}
+
+.middle-box{
+    grid-column: 2 / 3;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    padding: 70px;
+    gap: 70px;
+    background-color: #ccc;
+}
+
+.middle-box > h1, .moto-wrapper > div > h2{
+    background-image: linear-gradient(to right, red, blue);
+    color: transparent;
+    background-clip: text;
+}
+
+.middle-box > h1{
+    font-size: 60px;
+}
+
+.quote-box{
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+}
+
+.quote-box > h3{
+    grid-column: 2 / 3;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+.child-box{
+    display: grid;
+    gap: 50px;
+}
+
+img[src="images/olimpic-logo.jpg"]{
+    width: 70rem;
+    justify-self: center;
+}
+
+.moto-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.moto-wrapper > div{
+    grid-column: 2 / 3;
+    display: grid;
+    gap: 14px;
+}
+
+.moto-wrapper > div > h2{
+    font-size: 50px;
+    width: 250px;
+}
+
+.moto-wrapper > div > p{
+    color: black;
+    line-height: 1.8;
+}
+
+.basic-club-info{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.basic-club-info > h2{
+    color: black;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: rgb(29, 29, 29);
+}
+
+td, th{
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.word-break{
+    white-space: pre;
 }
