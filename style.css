@@ -687,15 +687,6 @@ h2, h3, p{
     border: 3px solid #e2e8f0;
 }
 
-.log-in-info-box > fieldset > input:hover{
-    border-color: #2c69db;
-}
-
-.log-in-info-box > fieldset > input:focus {  /* border is also black */
-    /* border-color: #2c69db; */
-    border: 3px solid red;
-}
-
 .log-in-info-box button:first-of-type{
     width: 29rem;
 }
@@ -1274,4 +1265,10 @@ img[src="images/test2.jpg"]{
     cursor: pointer;
     border-color: #2352A7;
     /* transition: 3.5 ease-in-out; */    /* effect doesnt work */
+}
+
+
+/* removes outline when clicking on input field anywhere on website */
+input:focus{
+    outline: none;
 }
