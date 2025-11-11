@@ -1272,3 +1272,88 @@ img[src="images/test2.jpg"]{
 input:focus{
     outline: none;
 }
+
+
+/* new code */
+#mid-content{
+    padding: 20px;
+    padding-bottom: 0;
+    z-index: 0;
+    height: auto;
+}
+
+.carousel-wrapper{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 45%;
+    font-weight: 320;
+    font-size: 80px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-side-arrow{
+    left: 3%;
+}
+
+.right-side-arrow{
+    right: 3%;
+}
+
+.carousel-frame{
+    width: 100%;
+    height: inherit;
+}
+
+.image-container{
+    width: 100%;
+    height: 100%;
+}
+
+.image-div-1, .image-div-2, .image-div-3{
+    display: none;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+}
+
+.image-div-1.show, .image-div-2.show, .image-div-3.show{
+    display: block;
+}
+
+.image-div-1 img, .image-div-2 img, .image-div-3 img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-image{
+    object-fit: cover;
+}
+
+.bottom-nav-dots{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.circle-svg{
+    width: 21px;
+    height: 20px;
+}
+
+.circle-1, .circle-2, .circle-3{
+    fill: transparent;
+    stroke: black; 
+    stroke-width: 1.5;
+}
+
+.circle-1.color, .circle-2.color, .circle-3.color{
+    fill: black;
+}
